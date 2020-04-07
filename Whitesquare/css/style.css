@@ -1,6 +1,6 @@
 body{
     min-width:960px;
-    background-image: url(../images/bg3.png);
+    background-image: url(../images/bg.png);
     color: #8f8f8f; /*цвет текста*/
     font: 12px Tahoma, sans-serif; /*размер шрифта 12пх, шрифт тахома, семейство шрифтов сан-сериф*/
     font-weight: 400; /*насыщенность шрифта. 400-норм, 700-болд, 0-900*/
@@ -11,6 +11,7 @@ body{
 #wrapper {
     max-width: 960px;
     margin: auto;
+    padding-bottom: 7px;
 }
 header {
     padding: 20px 0; /*отступ хедера от верха на 20пх*/
@@ -87,7 +88,7 @@ nav li {
     padding-left: 20px;
 }
 #heading h1 {
-    background-image: url(../images/bg3.png);
+    background-image: url(../images/bg.png);
     text-transform: uppercase;
     display: inline-block;
     color: #7e7e7e;
@@ -378,11 +379,21 @@ footer a {
     border-bottom: 1px solid #e7e7e7;
 }
 .slider__nav p {
-    padding:12px;
-    display: inline;
+    color: #8f8f8f;
+    margin:0px;
+    width: 24%;
+    /*padding:12px;*/
+    display: inline-block;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Oswald', sans-serif;
+}
+.slider__nav__actvive a{
+    color: #29c5e6 !important;
+}
+.slider__nav p a{
+    color: #8f8f8f;
+    text-decoration: none;
 }
 .slider__nav__num{
     width:24px;
@@ -390,21 +401,154 @@ footer a {
     background-color: #8f8f8f;
     color: #ffffff;
     padding:5px 10px;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     line-height: 16px;
     margin-right:12px;
+    margin-left: 12px;
 }
 .slider__nav__actvive span{
     font-weight: 300;
     background-color: #29c5e6;
 }
-.slider__nav__actvive {
-    color: #29c5e6;
+/*Новостной блок*/
+.news{
+    margin-left: 10px;
+    width:48%;
+    float:left;
 }
-
-
-
-
-
+.news img {
+    width:140px;
+    height: 140px;
+    float:left;
+    margin-top:15px;
+}
+.quote{
+    width:48%;
+    float:left;
+}
+.miniTitle{
+    width: 95%;
+    float: left;
+    height: 15px;
+}
+.miniTitle{
+    /*margin-left: 6px;*/
+    margin-top: 35px;
+    /*padding-top:2px;*/
+    color: #7e7e7e;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+    float:left;
+    width: 90%;
+}
+.miniTitle span{
+    padding-left: 5px;
+    background-image: url(../images/bg7.jpg);
+    padding-right: 8px;
+}
+.miniTitle__line{
+    /*margin-left: 20px;*/
+    width: 100%;
+    margin-top: 38px;
+    height: 15px;
+    background: transparent url(../images/titleBg.png);
+}
+.square__mini__title{
+    float: left;
+    margin-top: 38px;
+    width:15px;
+    height: 15px;
+    background-color: #29c5e6;
+}
+.mews__announce{
+    margin-top:18px;
+    margin-left:19px;
+    width: 65%;
+    float: left;
+    text-align: justify;
+    font-family: Tahoma;
+}
+.mews__announce p{
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.mews__announce a,.services__announce a{
+    font-family: Tahoma;
+    text-decoration: underline;
+    color: #8f8f8f;
+    font-weight: 400;
+    line-height: 16px;
+}
+.news__quote{
+    font-style:italic;
+}
+.quote__author{
+    color: #525252;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.services,.ourteam,.support{
+    float:left;
+    width:31%;
+    min-height: 200px;
+}
+.services{
+    margin-left:10px;
+}
+.ourteam,.support{
+    margin-left:20px;
+}
+.services__announce{
+    width: 100%;
+    text-align: justify;
+    font-family: Tahoma;
+    margin-top: 20px;
+}
+.ourteam img{
+    width:40px;
+    height: 40px;
+    float:left;
+}
+.ourteam__block1{
+    padding-top:21px;
+}
+p.ourteam__title{
+    color: #525252;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin:0px;
+}
+p.ourteam__announce{
+    margin: 0;
+    margin-top: 6px;
+    color: #8f8f8f;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px;
+}
+.ourteam__block2,.ourteam__block3{
+    margin-top: 10px;
+}
+.ourteam img{
+    padding-right: 11px;
+}
+.ourclients{
+    width: 97%;
+    float: left;
+    margin-right: 0px;
+    margin-left:9px;
+}
+.section__index{
+    display: inline-block;
+}
+.ourclients__images{
+    margin:20px;
+}
